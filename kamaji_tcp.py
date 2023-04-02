@@ -1,6 +1,9 @@
 import subprocess
 import yaml
 import json
+
+# cert = "kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.yaml"
+# subprocess.run(cert, shell=True, check=True)
 # # Add Clastix Helm repository
 # add_repo_command = ['helm', 'repo', 'add', 'clastix', 'https://clastix.github.io/charts']
 # subprocess.run(add_repo_command, check=True)
