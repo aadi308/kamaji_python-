@@ -95,6 +95,10 @@ subprocess.run(config_detail, shell=True, check=True)
 command = f'kubectl get secrets {secret_name} -o json | jq -r \'.data["admin.conf"]\' | base64 -d > {config}'
 subprocess.run(command, shell=True, check=True)
 
+#list tcp, deployment, pods and svc
+list_resources = f'kubectl get tcp,deploy,pods,svc'
+subprocess.run(list_resources, shell=True, check=True)
+
 # config_cmd = f'kubectl --kubeconfig={config} config view'
 # subprocess.run(config_cmd, shell=True, check=True)
 # subprocess.run(["kubectl", "--kubeconfig={config}", "config", "view"])
