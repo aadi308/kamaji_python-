@@ -3,4 +3,4 @@ k3d
 apischema
 kubecrd
 kopf
-json
+
