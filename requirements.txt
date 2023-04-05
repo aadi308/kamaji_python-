@@ -3,4 +3,7 @@ k3d
 apischema
 kubecrd
 kopf
+time
+path
+clien
 
